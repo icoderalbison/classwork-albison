@@ -1,28 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
 // import State from './components/State';
-import Mapdata from './components/dars1/Mapdata';
-import Conditional from "./components/dars2/Conditional"
-import Home from './components/dars2/Pages/Home';
-import Blog from './components/dars2/Pages/Blog';
+import Mapdata from "./components/dars1/Mapdata";
+import Conditional from "./components/dars2/Conditional";
+import Home from "./components/dars2/Pages/Home";
+import Blog from "./components/dars2/Pages/Blog";
 
-import {Routes, Route, Link} from "react-router-dom"
+import { Routes, Route, Link } from "react-router-dom";
+import Stateffect from "./components/dars3/Stateffect";
 
 let datas = [
   {
-    title: "Acer"
+    title: "Acer",
   },
   {
-    title: "Hp"
+    title: "Hp",
   },
   {
-    title: "Mac"
+    title: "Mac",
   },
   {
-    title: "Dell"
+    title: "Dell",
   },
-]
-
+];
 
 function App() {
   return (
@@ -31,7 +31,7 @@ function App() {
       {/* <Mapdata data={datas}  /> */}
       {/* <Conditional /> */}
 
-
+      {/* 
     <ul>
       <li><Link to="/">Home</Link></li>
       <li><Link to='/blog'>Blog</Link></li>
@@ -40,8 +40,9 @@ function App() {
     <Routes>
       <Route path="/" element={<Home />}/>
       <Route path="/blog" element={<Blog />}/>
-    </Routes>
+    </Routes> */}
 
+    <Stateffect />
     </div>
   );
 }
