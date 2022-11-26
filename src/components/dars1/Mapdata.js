@@ -1,17 +1,16 @@
 import React from 'react'
-
+import "./state.scss"
 const Mapdata = (props) => {
+    let data = props.data
+    
   return (
     <>
         <ul>
             {
-                props.data.map((dat) =>(
-                    <li>
-                        <h1>{dat.title}</h1>
-                        <img src={dat.img} />
-                    </li>
+                data.map((dat) =>(
+                    <li>{dat.title}</li>
                 ))
-            }
+            }  
         </ul>
     </>
   )
