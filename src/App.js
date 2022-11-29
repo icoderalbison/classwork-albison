@@ -8,6 +8,7 @@ import Blog from "./components/dars2/Pages/Blog";
 
 import { Routes, Route, Link } from "react-router-dom";
 import Stateffect from "./components/dars3/Stateffect";
+import Usememocallback from "./components/dars4/Usememocallback";
 
 let datas = [
   {
@@ -42,7 +43,8 @@ function App() {
       <Route path="/blog" element={<Blog />}/>
     </Routes> */}
 
-    <Stateffect />
+    {/* <Stateffect /> */}
+    <Usememocallback />
     </div>
   );
 }
